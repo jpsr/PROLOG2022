@@ -6,6 +6,7 @@
 #install.packages("languageserver")
 #install.packages("knitr")
 #install.packages("rmarkdown")
+#install.packages("httpgd")
 
 library(magick)
 library(rsvg)
@@ -21,5 +22,6 @@ fondo <- image_border(image_background(tec,'#6991ff'),"#298000","60x60")
 grados <- 0
 while(grados < 360){
     plot(image_rotate(fondo,grados))
+    Sys.sleep(100)
     grados <- grados + 30
 }

@@ -9,10 +9,10 @@ library(rsvg)
 #tiger <- image_read_svg('http://jeroen.github.io/images/tiger.svg', width = 350)
 #plot(tiger)
 
-#install.packages("imager")
+tec <- image_read("Images/tecnm.png")
 
-library(imager)
+fondo <- image_border(image_background(tec,'hotpink'),"#000080","20x10")
+plot(fondo)
 
-fimg <- system.file("Images/tecnm.png", package = 'imager')
-im <- load.image(fimg)
-plot(im)
+rotacion <- image_rotate(tec,45)
+plot(rotacion)

@@ -3,7 +3,7 @@
 #install.packages("rsvg")
 
 #install.packages("httpgd")
-install.packages("languageserver")
+#install.packages("languageserver")
 
 library(magick)
 library(rsvg)

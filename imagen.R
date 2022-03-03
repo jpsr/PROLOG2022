@@ -1,7 +1,6 @@
 
 #install.packages("magick")
 #install.packages("rsvg")
-install.packages("PKG")
 
 library(magick)
 library(rsvg)
@@ -16,5 +15,4 @@ fondo <- image_border(image_background(tec,'#6991ff'),"#298000","60x60")
 
 for (i in 1:10) {
     plot(image_rotate(fondo,i))
-       
 }

@@ -4,6 +4,8 @@
 
 #install.packages("httpgd")
 #install.packages("languageserver")
+#install.packages("knitr")
+#install.packages("rmarkdown")
 
 library(magick)
 library(rsvg)
@@ -19,5 +21,5 @@ fondo <- image_border(image_background(tec,'#6991ff'),"#298000","60x60")
 grados <- 0
 while(grados < 360){
     plot(image_rotate(fondo,grados))
-    grados = grados + 30
+    grados <- grados + 30
 }

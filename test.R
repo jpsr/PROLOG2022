@@ -1,1 +1,1 @@
-install.packages("librsvg")
+install.packages("graphics")

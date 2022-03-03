@@ -10,10 +10,9 @@ library(rsvg)
 #plot(tiger)
 
 tec <- image_read("Images/tecnm.png")
-plot(tec)
+#plot(tec)
 
-#fondo <- image_border(image_background(tec,'hotpink'),"#000080","20x10")
-#plot(fondo)
+fondo <- image_border(image_background(tec,'#6991ff'),"#298000","60x60")
 
-#rotacion <- image_rotate(tec,45)
-#plot(rotacion)
+rotacion <- image_rotate(fondo,45)
+plot(rotacion)

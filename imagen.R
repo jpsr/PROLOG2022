@@ -1,7 +1,7 @@
 
 #install.packages("magick")
 #install.packages("rsvg")
-
+install.packages("PKG")
 
 library(magick)
 library(rsvg)
@@ -14,5 +14,8 @@ tec <- image_read("Images/tecnm.png")
 
 fondo <- image_border(image_background(tec,'#6991ff'),"#298000","60x60")
 
-rotacion <- image_rotate(fondo,45)
-plot(rotacion)
+for (i in 1:10) {
+    rotacion <- image_rotate(fondo,i)
+    Sys.sleep(100)
+    plot(rotacion)
+}

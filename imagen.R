@@ -2,6 +2,9 @@
 #install.packages("magick")
 #install.packages("rsvg")
 
+#install.packages("httpgd")
+install.packages("languageserver")
+
 library(magick)
 library(rsvg)
 
@@ -13,6 +16,8 @@ tec <- image_read("Images/tecnm.png")
 
 fondo <- image_border(image_background(tec,'#6991ff'),"#298000","60x60")
 
-for (i in 1:10) {
-    plot(image_rotate(fondo,i))
+grados <- 0
+while(grados < 360){
+    plot(image_rotate(fondo,grados))
+    grados = grados + 30
 }

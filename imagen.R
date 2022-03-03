@@ -1,4 +1,4 @@
-#install.packages("languageserver")
+
 #install.packages("magick")
 #install.packages("rsvg")
 
@@ -10,9 +10,10 @@ library(rsvg)
 #plot(tiger)
 
 tec <- image_read("Images/tecnm.png")
+plot(tec)
 
-fondo <- image_border(image_background(tec,'hotpink'),"#000080","20x10")
-plot(fondo)
+#fondo <- image_border(image_background(tec,'hotpink'),"#000080","20x10")
+#plot(fondo)
 
-rotacion <- image_rotate(tec,45)
-plot(rotacion)
+#rotacion <- image_rotate(tec,45)
+#plot(rotacion)

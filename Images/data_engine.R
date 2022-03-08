@@ -1,2 +1,10 @@
-my_file <- read.csv("Carpeta/data_cleaned_2021.csv")
-summary(my_file)
+# instalar paquete readr
+#install.packages("readr") # nolint
+ 
+# cargar paquete readr
+library(readr)
+
+
+mfile <- read.csv("Data/data_cleaned_2021.csv");
+
+head(mfile);

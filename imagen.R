@@ -20,7 +20,7 @@ tec <- image_read("Images/tecnm.png")
 fondo <- image_border(image_background(tec,'#6991ff'),"#298000","60x60")
 
 grados <- 0
-for(i in 1:30){
+for(i in 1:10){
     print(i)
     plot.new()
     plot(image_rotate(fondo,grados))
